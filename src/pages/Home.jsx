@@ -21,11 +21,11 @@ export default function Home() {
           <div
             key={article.id}
             className="bg-white rounded-xl shadow hover:shadow-lg p-5" >
-            
+             <img src="https://media.istockphoto.com/id/638059282/photo/research.jpg?s=612x612&w=0&k=20&c=sqFtKHae39emrEcXlQ_34F4u-wGqOvIuTEbpDNhMdSs="
+          alt="" className="w-full h-40 object-cover rounded mb-3" />
+          
             <h2 className="text-xl font-semibold mb-2 text-indigo-600"> {article.title} </h2>
-        {/* <img src="https://media.istockphoto.com/id/638059282/photo/research.jpg?s=612x612&w=0&k=20&c=sqFtKHae39emrEcXlQ_34F4u-wGqOvIuTEbpDNhMdSs="
         
-        alt="" /> */}
             <Link to={`/articleDetails/${article.id}`}
               className="text-sm text-white bg-indigo-500 px-4 py-2 rounded hover:bg-indigo-600"> Click to read </Link>
           
